@@ -46,7 +46,7 @@ jobs:
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
 
-      - name: 🐛 Verify Build Output
+      - name: 🐛 Verificar Build Output
         run: |
           echo "Build directory contents:"
           ls -la dist/cla/browser
