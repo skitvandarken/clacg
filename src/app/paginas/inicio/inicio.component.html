@@ -4,7 +4,7 @@
 <div style="background-image: url('/img/family-cla.png'); background-size: cover; background-position: center;"
   class="uk-section">
 
-  <div class="uk-container uk-text-center">
+  <div id="comecar" class="uk-container uk-text-center">
     <p style="color: #FFD700; font-size: 1.3rem; font-weight:600; text-shadow: #000 1px 1px;">Recupere o controlo <br>e
       autoridade sobre sua vida</p>
   </div>
@@ -57,7 +57,7 @@
     </div>
 
     <div class="uk-margin-medium-top uk-child-width-1-4@m uk-grid-small uk-grid-match card-grid uk-margin-medium-bottom"
-      uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 300; repeat: true" uk-grid>
+      uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 300; repeat: false" uk-grid>
       <div>
         <div class="uk-card custom-card">
           <h3 class="uk-card-title">O que somos</h3>
@@ -111,7 +111,7 @@
     </div>
     <div class="uk-container uk-margin-medium-top uk-margin-large-bottom uk-margin-small-bottom uk-text-center ">
       <div class="uk-child-width-1-1@m uk-grid-medium uk-child-width-1-1@s uk-grid-match uk-grid uk-text-center" uk-grid
-        uk-scrollspy="cls: uk-animation-slide-top; target: .uk-card; delay: 300; repeat: true">
+        uk-scrollspy="cls: uk-animation-slide-top; target: .uk-card; delay: 300; repeat: false">
 
         <!-- Lado direito -->
         <div class="uk-width-1-1@m" uk-grid>
@@ -193,7 +193,7 @@
   </div>
 </div>
 
-<div class="uk-section glass-form-bg">
+<div id="juntar-se" class="uk-section glass-form-bg">
   <div class="uk-container uk-container-small">
 
 
@@ -244,7 +244,7 @@
 
       <!-- Nº do B.I / Passaporte -->
       <div class="uk-margin">
-        <label class="uk-form-label">Nº do B.I / Passaporte</label>
+        <label class="uk-form-label">Nº do B.I </label>
         <input class="uk-input glass-input" formControlName="numeroBI" type="text" placeholder="Ex.: 000000000LA040">
         <div *ngIf="registerForm.get('numeroBI')?.touched && registerForm.get('numeroBI')?.invalid"
           class="uk-text-danger uk-text-small">
