@@ -1,0 +1,28 @@
+/* Tornar sticky */
+  .uk-navbar-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: #ffd51ce1; /* darkgold transparente */
+    backdrop-filter: blur(12px); /* efeito glassmórfico */
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 215, 28, 0.4); /* linha dourada suave */
+    border-radius: 0px 0px 24px 24px; /* bordas arredondadas na parte inferior */
+  }
+
+  /* Ajuste do logo */
+  .uk-navbar-item img {
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.3));
+  }
+
+  /* Links (caso ative depois) */
+  .uk-navbar-nav > li > a {
+    color: #fff !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .uk-navbar-nav > li > a:hover {
+    color: #ffd71c !important;
+  }
