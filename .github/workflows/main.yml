@@ -51,7 +51,7 @@ jobs:
           echo "Build directory contents:"
           ls -la dist/cla/browser
           echo "Checking for Firebase config in main.js:"
-          grep -o "apiKey" dist/clacg/browser/main.js || echo "No API key found in build"
+          grep -o "apiKey" dist/cla/browser/main.js || echo "No API key found in build"
 
       - name: 🧹 Secure Clean & Deploy via WebDAV
         env:
@@ -59,7 +59,7 @@ jobs:
           WEBDISK_PASSWORD: ${{ secrets.WEBDISK_PASSWORD }}
         run: |
           # ===== CONFIGURATION =====
-          BUILD_DIR="dist/clacg/browser"
+          BUILD_DIR="dist/cla/browser"
           WEBDISK_URL="https://cla-cg.org:2078"
           
           # Protected items (won't be touched)
