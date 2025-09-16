@@ -40,7 +40,6 @@
 }
 
 
-
 .custom-card {
     background: linear-gradient(135deg, rgb(0, 0, 0), rgb(30, 30, 30));
     border: 1px solid rgba(255, 215, 0, 0.3);
@@ -52,15 +51,13 @@
     transition: all 0.4s ease;
     overflow: hidden;
 
-    /* 📐 Balanced square-ish look */
-
-
-
-    display: block;
-    flex-direction: column;
+    display: flex;            /* ✅ use flex */
+    flex-direction: column;   /* ✅ makes text stack properly */
     justify-content: center;
     text-align: center;
+    position: relative;       /* ✅ needed for ::before glow */
 }
+
 
 /* Accent glow pattern */
 .custom-card::before {
